@@ -6,8 +6,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        Welcome to Credit Tracking
         <Logo />
+        Welcome to Credit Tracking
       </div>
     )
   }
