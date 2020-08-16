@@ -1,10 +1,12 @@
 import React from 'react';
-import SpendyLogo from 'app/public/images/spendy-icon.png'; 
+import SpendyLogo from './spendy-icon.png'
 
 function Logo () {
   return (
-    <div></div>
+    <div>
+      <img src={SpendyLogo} alt='spendy logo' />
+    </div>
   )
 }
 
-export default Logo
+export default Logo;
