@@ -1,14 +1,17 @@
-export const ClassNames = ({ blk = '', elt = '', mods = [''] }) => {
+export const classNames = ({ blk = '', elt = '', mods = [''] }) => {
 
     let subClass = '';
 
     if (blk !== '') {
+        subClass = `${blk}`
+
         if (elt !== '') {
-            subClass = ` ${blk} ${blk}__${elt}`
+            subClass += ` ${blk}__${elt}`
         }
 
         if (mods.length > 0) {
             mods.map((item) => {
+
                 if (item !== '')
                     subClass += ` ${blk}__${elt}--${item}`
             })
