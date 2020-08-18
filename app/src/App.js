@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import './App.scss';
-import { classNames } from './component-library/helpers/classNames';
-
-
-
+import Logo from './component-library/components/icon/index'
 
 class App extends Component {
 
   render() {
     return (
       <div>
-        {classNames({ blk: 'app', elt: 'sub', mods: ['class1', 'class2'] })}
+
+        <Logo />
+        Welcome to Credit Tracking
 
       </div>
     )
