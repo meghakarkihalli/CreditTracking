@@ -3,7 +3,6 @@ $primary_btn_clr:#0000FF;
 $primary_btn_width:200px;
 $primary_btn_height:50px;
 
-
 // Secondary_Button
 $secondary_btn_clr:green;
 $secondary_btn_width:250px;
@@ -13,7 +12,6 @@ $secondary_btn_height:50px;
     PrimaryColor:$primary_btn_clr;
     SecondaryColor:$secondary_btn_clr;
 }
-
 .Primary_Class{
     background-color: $primary_btn_clr;
     width:$primary_btn_width;
@@ -21,15 +19,12 @@ $secondary_btn_height:50px;
     margin-left: 20px;
     cursor: pointer;
     color:white;
-    border-radius:5px;
     margin-top:10px;
-    border-color:blue;
-    border-radius: 5px;
-    transition-duration: 0.3s;
-    transition: right .14s ease-in,left 0s ease-in,top 0s ease-in,bottom 0s ease-in;
-    overflow: visible;
-
-   
+    font-size: 16px;
+    line-height: 1.5;
+    border-radius: 6px;
+    letter-spacing: .6px;
+    transition: all .2s ease-in-out;
     &:hover{
         background-color:#4169E1 ;
         color:white;
@@ -44,10 +39,12 @@ $secondary_btn_height:50px;
     margin-left: 20px;
     margin-top:10px;
     cursor: pointer;
-    border:1px solid green;
-    border-radius: 5px;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 1.5;
     color:white;
-
+    letter-spacing: .6px;
+    transition: all .2s ease-in-out;
     &:hover{
         background-color: yellowgreen;
     }
