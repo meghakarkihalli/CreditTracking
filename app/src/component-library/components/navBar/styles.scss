@@ -1,0 +1,44 @@
+nav{
+    box-shadow: 0 10px 10px 0 rgba($color: #706d6d, $alpha: .2);
+    margin-bottom: 10px;
+    .hello{
+        color: green;
+    }
+
+    .nav-bar{
+        display: flex;
+        align-items: center;
+        margin: 0 5%;
+        position: sticky;
+        justify-content: space-between;
+
+        .logo{
+            flex: 0.5;
+        }
+        
+        .nav-links{
+            flex: 4;
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+        }
+
+        .spacer{
+            flex: 1
+        }
+
+        .nav-right{
+            flex: 1;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        @media only screen and (max-width: 900px){
+         
+            .nav-links{
+                display: none;
+            }
+        }
+    }
+
+}

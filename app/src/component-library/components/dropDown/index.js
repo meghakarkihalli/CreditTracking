@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 const DropDown = (props) => {
     const { optionsList } = props;
     return (
-        <div className='gray'>
-            <select>
+        <div>
+            <select className='selection'>
                 {/* check if opsionsLIst pass as props or not */}
                 {optionsList ?
                     (optionsList.map((item, index) => (
