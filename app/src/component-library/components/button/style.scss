@@ -1,51 +1,41 @@
-// Primary_Button 
-$primary_btn_clr:#0000FF;
-$primary_btn_width:200px;
-$primary_btn_height:50px;
+//Variables
+$primary: rgb(175, 22, 133);
+$secondary: rgb(47, 186, 120);
+$default-text-color: #fff;
+$black-text-color: #333;
 
-// Secondary_Button
-$secondary_btn_clr:green;
-$secondary_btn_width:250px;
-$secondary_btn_height:50px;
-
-:export{
-    PrimaryColor:$primary_btn_clr;
-    SecondaryColor:$secondary_btn_clr;
-}
-.Primary_Class{
-    background-color: $primary_btn_clr;
-    width:$primary_btn_width;
-    height: $primary_btn_height;
-    margin-left: 20px;
+//Button Styles
+.button {
+  padding: 0 14px;
+  margin: 2%;
+  border: none;
+  font-size: 1em;
+  border-radius: 2px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 1;
+  height: 36px;
+  color: $default-text-color;
+  &:hover {
     cursor: pointer;
-    color:white;
-    margin-top:10px;
-    font-size: 16px;
-    line-height: 1.5;
-    border-radius: 6px;
-    letter-spacing: .6px;
-    transition: all .2s ease-in-out;
-    &:hover{
-        background-color:#4169E1 ;
-        color:white;
-        transform: translateZ(0);
-    }
-}
+  }
 
-.Secondary_Class{
-    background-color: $secondary_btn_clr;
-    width:$secondary_btn_width;
-    height: $secondary_btn_height;
-    margin-left: 20px;
-    margin-top:10px;
-    cursor: pointer;
-    border-radius: 6px;
-    font-size: 16px;
-    line-height: 1.5;
-    color:white;
-    letter-spacing: .6px;
-    transition: all .2s ease-in-out;
-    &:hover{
-        background-color: yellowgreen;
+  &.button-primary {
+    background-color: $primary;
+    &:hover {
+      box-shadow: 0px 0px 7px 1px rgba($primary, 0.7);
     }
+    &.bordered {
+      background: none;
+      border: 1px solid $primary;
+      color: $black-text-color;
+    }
+  }
+  &.button-secondary {
+    background-color: $secondary;
+    &:hover {
+      box-shadow: 0px 0px 7px 1px rgba($secondary, 0.7);
+    }
+  }
 }
