@@ -9,43 +9,89 @@ $secondary_btn_width:250px;
 $secondary_btn_height:50px;
 
 :export{
-    PrimaryColor:$primary_btn_clr;
-    SecondaryColor:$secondary_btn_clr;
+     PrimaryColor:$primary_btn_clr;
+     SecondaryColor:$secondary_btn_clr;
 }
 .Primary_Class{
-    background-color: $primary_btn_clr;
-    width:$primary_btn_width;
-    height: $primary_btn_height;
-    margin-left: 20px;
-    cursor: pointer;
-    color:white;
-    margin-top:10px;
-    font-size: 16px;
-    line-height: 1.5;
-    border-radius: 6px;
-    letter-spacing: .6px;
-    transition: all .2s ease-in-out;
-    &:hover{
-        background-color:#4169E1 ;
-        color:white;
-        transform: translateZ(0);
-    }
+     background-color: $primary_btn_clr;
+     width:$primary_btn_width;
+     height: $primary_btn_height;
+     display: inline-block;
+     border-width: 1px;
+     border-style: solid;
+     cursor: pointer;
+     font-style: bold;
+     padding: 13px 50px;
+     font-size: 18px;
+     line-height: 1.5;
+     border-radius: 6px;
+     letter-spacing: .6px;
+     user-select: none;
+     background-color: rgba(0,0,0,0);
+     border: 1px solid #af1685;
+     color: #af1685;
+     &:hover{
+         background-color: purple;
+         color:white;
+     }
 }
-
-.Secondary_Class{
-    background-color: $secondary_btn_clr;
-    width:$secondary_btn_width;
-    height: $secondary_btn_height;
-    margin-left: 20px;
-    margin-top:10px;
-    cursor: pointer;
-    border-radius: 6px;
-    font-size: 16px;
-    line-height: 1.5;
-    color:white;
-    letter-spacing: .6px;
-    transition: all .2s ease-in-out;
-    &:hover{
-        background-color: yellowgreen;
+.autofill{
+     background: linear-gradient(to right, purple 50%, white 50%);
+     background-size: 200% 100%;
+     background-position: right bottom;
+     transition: all .1s ease-out;
+        &:hover{
+            background-position: left bottom;
+            color:white;
+        }
     }
-}
+    .Secondary_Class{
+        width:$secondary_btn_width;
+        height: $secondary_btn_height;
+        border-width: 1px;
+         border-style: solid;
+        text-align: center;
+        cursor: pointer;
+        padding: 13px 50px;
+        font-size: 18px;
+        line-height: 1.5;
+        border-radius: 6px;
+        letter-spacing: .6px;
+        box-shadow: 0 0 1px rgba(0,0,0,0);
+        opacity: 1;
+         transition: 1s;
+        &:hover {
+           padding-right: 25px;
+         }
+         
+         &:hover:after {
+           opacity: 1;
+           right: 0;
+         }
+       
+        & :after {
+               content: '\00bb';
+               position: absolute;
+               opacity: 0;
+               top: 0;
+               right: -20px;
+               transition: 0.5s;
+         }
+         
+   }
+   .autofill2{
+       background-size: 200% 100%;
+       background-position: right bottom;
+       background-color:green;
+       color:white;
+   
+       &:hover{
+       background-position: left bottom;
+       color:white;
+       box-shadow: 0 3px 15px rgba(47,186,120,.6);
+       background-color: rgb(6, 180, 6);
+       
+   
+     }
+   
+   }
