@@ -1,5 +1,5 @@
 import React from 'react';
-import SpendyLogo from './spendy-icon.png'
+import SpendyLogo from './spendy-icon.svg'
 
 function Logo () {
   return (
