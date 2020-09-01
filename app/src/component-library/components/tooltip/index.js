@@ -30,7 +30,7 @@ const Tooltip = (props) => {
             {children}
             {active && (
                 <div className='Tooltip-Tip'>
-                    {/* Content */}
+                    {/*Left Content */}
                     <div className='leftContent'>
                         <ul>
                             {navigationList.map((list, index) => (
@@ -39,9 +39,10 @@ const Tooltip = (props) => {
                         </ul>
                         <div className='left-addon'>{leftAddonLink}</div>
                     </div>
+                    {/*Right Content */}
                     <div className='rightContent'>
                         <img src={rightSideImage} alt='spendy logo' />
-                        <p className='rightSideText'>{content}</p>
+                        <h6 className='rightSideText'>{content}</h6>
                         <Button bordered>Find out how</Button>
                     </div>
                 </div>)

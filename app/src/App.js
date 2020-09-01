@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.scss';
 import Logo from './component-library/components/icon/index'
-import Button from './component-library/components/button';
 import Tooltip from './component-library/components/tooltip';
 import BoostRocket from './graphic-boost-rocket.png'
 
@@ -28,6 +27,7 @@ class App extends Component {
           leftAddonLink='Compare All Products'>
           Reports & Scores
         </Tooltip>
+
         Welcome to Credit Tracking
 
       </div>
