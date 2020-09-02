@@ -6,7 +6,7 @@ const Tooltip = (props) => {
 
     const [active, setActive] = useState(false);
     let timeout;
-    const { navigationList = [], children, rightSideImage, content, leftAddonLink } = props;
+    const { navigationList, children, rightSideImage, content, leftAddonLink } = props;
 
 
     const showTip = () => {
@@ -41,7 +41,7 @@ const Tooltip = (props) => {
                     </div>
                     {/*Right Content */}
                     <div className='rightContent'>
-                        <img src={rightSideImage} alt='spendy logo' />
+                        <img src={rightSideImage} alt='rocket image' />
                         <h6 className='rightSideText'>{content}</h6>
                         <Button bordered>Find out how</Button>
                     </div>

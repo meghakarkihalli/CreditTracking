@@ -46,7 +46,7 @@ $blue-color: #426da9;
   border-bottom-color: $tooltip-background-color;
 }
 
-/* tooptip left content */
+/* tooltip left content */
 .leftContent {
   flex: 50%;
   padding: 25px;
@@ -68,7 +68,7 @@ $blue-color: #426da9;
     background: $blue-color;
   }
 }
-
+/* tooltip right content */
 .rightContent {
   flex: 50%;
   padding: 25px;

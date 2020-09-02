@@ -28,6 +28,8 @@ class App extends Component {
           Reports & Scores
         </Tooltip>
 
+
+
         Welcome to Credit Tracking
 
       </div>
