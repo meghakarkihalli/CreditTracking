@@ -1,12 +1,19 @@
-import React, { Component } from 'react';
-import style from './style.scss';
+import React from 'react';
+import './style.scss';
 
-function Button(props) {
+const Button = (props) => {
+    //let { btnType } = props;
+    let { secondary, bordered } = props;
+
     return (
-        <button onClick={props.my_function} className={props.btn_class}>{props.children}</button>
+        //  <button className={`button${btnType ? ' button-' + btnType : ' button-primary'}`}>
+        <button className=
+            {`button${secondary ? ' button-secondary' : ' button-primary'}
+        ${bordered ? 'bordered' : ''}
+        `}>
+            {props.children}
+        </button >
     );
 }
+
 export default Button;
-
-
-
